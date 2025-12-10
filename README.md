@@ -1,18 +1,24 @@
-# React + Vite
+# One To One Location Share #
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**One To One Location Share** is a platform designed for secure and real-time location sharing. It utilizes a one-to-one key connection formula, allowing only one person to be tracked at a time, and only with their explicit permission. Simply use their unique tracking key to initiate tracking.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Use case:**
+- **Child Safety:** Ideal for keeping track of children and ensuring their safety while they use smartphones.
+- **Package Tracking:** Useful for monitoring the delivery status of packages in real-time.
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+**Features:**
+- **Modern and User-Friendly UI:** The platform boasts a sleek and intuitive interface for easy navigation.
+- **No Account Required:** No need to log in or create an account; just enter the required details each time you want to track someone.
+- **Data Privacy:** The website does not store your data. It generates a downloadable blob for tracking history. On mobile devices, tracking data is stored locally, allowing users to keep it as long as desired or set to automatically delete after 30 days.
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+![Key Concepts Diagram](./src/assets/keycon.jpeg)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+more details will be available time to time.
+~ **SKRRRKID**
