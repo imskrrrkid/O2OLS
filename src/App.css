@@ -9,43 +9,76 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    border-radius: 20px;
-    /*z-index: 1000;*/
-}
-.leaflet-container:active {
-    box-shadow: 0 0 10px 1px white;
-    z-index: 1000;
-}
-h1 {
-    color: white;
-    /*background-color: mediumseagreen;*/
-    backdrop-filter: blur(5px);
-    /*border: 2px solid green;*/
-    border-radius: 50px;
-    padding: 20px;
-    width: 50%;
-    position: fixed;
-    text-align: center;
-    box-shadow: 0 0 50px black;
-    z-index: 1000;
-    transform: translateY(450px);
 }
 
-.map {
+.container .cont-mapxdetails .mapcont .map {
     width: 100%;
-    height: 100vh;
-    /*overflow: hidden;*/
+    height: auto;
+}
+.container .cont-mapxdetails .mapcont .map .mapCont {
+    width: 100%;
+    height: 66vh;
+}
+
+/*Header*/
+.Header {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid gray;
+    top: 0;
+    bottom: 0;
+}
+.Header ul {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 10px 10px 10px 30px;
+    margin: 0;
+    gap: 10px;
+    cursor: pointer;
 }
-.map .mapCont {
-    width: 98%;
+.Header ul li {
+    list-style-type: none;
+}
+.Header ul li a {
+    color: white;
+}
+.container {
+    width: 100%;
     height: 95vh;
-}
-.title {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+}
+.container .cont-dock {
+    min-height: 100%;
+    max-width: 30%;
+    min-width: 15%;
+    /*background-color: red;*/
+    resize: horizontal;
+    overflow: auto;
+    border-right: 1px solid darkgray;
+}
+.container .cont-mapxdetails {
+    width: 100%;
+    margin-right: auto;
+    height: 100%;
+    /*background-color: red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .cont-mapxdetails .mapcont {
+    width: 100%;
+    /*background-color: blue;*/
+    height: 70%;
+    overflow: hidden;
+    border-bottom: 1px solid darkgray;
+}
+.container .cont-mapxdetails .details {
+    width: 100%;
+    /*background-color: skyblue;*/
+    height: 30%;
 }
