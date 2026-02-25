@@ -1,84 +1,145 @@
-#root {
+*{
+    padding: 0;
     margin: 0;
-
     box-sizing: border-box;
-    width: 100%;
+    font-family: sans-serif;
 }
 
-.leaflet-container {
+body {
     width: 100%;
     height: 100vh;
-    position: relative;
+    background-color: skyblue;
 }
 
-.container .cont-mapxdetails .mapcont .map {
+.cont {
     width: 100%;
-    height: auto;
-}
-.container .cont-mapxdetails .mapcont .map .mapCont {
-    width: 100%;
-    height: 66vh;
-}
-
-/*Header*/
-.Header {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid gray;
-    top: 0;
-    bottom: 0;
-}
-.Header ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px 10px 10px 30px;
-    margin: 0;
-    gap: 10px;
-    cursor: pointer;
-}
-.Header ul li {
-    list-style-type: none;
-}
-.Header ul li a {
-    color: white;
-}
-.container {
-    width: 100%;
-    height: 95vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-.container .cont-dock {
-    min-height: 100%;
-    max-width: 30%;
-    min-width: 15%;
-    /*background-color: red;*/
-    resize: horizontal;
-    overflow: auto;
-    border-right: 1px solid darkgray;
-}
-.container .cont-mapxdetails {
-    width: 100%;
-    margin-right: auto;
-    height: 100%;
-    /*background-color: red;*/
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.container .cont-mapxdetails .mapcont {
+.cont .t-space{
     width: 100%;
-    /*background-color: blue;*/
-    height: 70%;
-    overflow: hidden;
-    border-bottom: 1px solid darkgray;
+    min-height: 5vh;
+    background-color: black;
+    
 }
-.container .cont-mapxdetails .details {
+.cont .b-space {
+     width: 100%;
+    min-height: 5vh;
+    background-color: black;
+    margin-top: auto;
+}
+
+.cont .content {
     width: 100%;
-    /*background-color: skyblue;*/
-    height: 30%;
+    height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cont .content .logo {
+    width: 60%;
+    height: auto;
+    background-color: red;
+}
+.cont .content .form {
+    width: 60%;
+    height: auto;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cont .content .form input {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+}
+.cont .content .form .hash {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+
+    
+}
+.cont .content .form .hash input {
+    width: 90%;
+}
+.cont .content .form .hash button{
+    background-color: skyblue;
+    padding: 5px;
+}
+
+.cont .content .form .timer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont .content .form .timer p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.cont .content .form .timer .timepick {
+    width: 60%;
+    height: auto;
+    background-color: white;
+    margin-left: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+.cont .content .form .timer .timepick input[type="time"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+.cont .content .form .termcond {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.cont .content .form .termcond input {
+    width: 40px;
+}
+.cont .content .form .broadcast {
+    width: auto;
+    height: 20vh;
+}
+.cont .content .form .broadcast button {
+    width: auto;
+    height: auto;
+    padding: 15px 40px;
+    font-size: 20px;
+}
+
+.cont .content .form .broadcast button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #ccc;
+    color: #666;
 }
